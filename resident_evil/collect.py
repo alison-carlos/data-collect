@@ -109,3 +109,8 @@ for i in tqdm(links):
 df = pd.DataFrame(data)
 
 df.to_parquet('dados_re.parquet', index=False)
+
+# %%
+
+df_new = pd.read_parquet('dados_re.parquet')
+df_new
